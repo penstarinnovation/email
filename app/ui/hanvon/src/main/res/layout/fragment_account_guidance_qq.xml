@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/Widget.Theme.Email.hv17TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text="@string/settings_guidance_qq_1_text" />
+
+    <TextView
+        style="@style/Widget.Theme.Email.hv17TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hv_46dp"
+        android:gravity="start"
+        android:text="@string/settings_guidance_qq_2_text" />
+
+    <ImageView
+        android:id="@+id/iv_qq1"
+        android:layout_width="@dimen/hv_300dp"
+        android:layout_height="@dimen/hv_115dp"
+        android:layout_marginTop="@dimen/hv_17dp"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="@dimen/hv_46dp"
+        android:contentDescription="TODO" />
+
+    <TextView
+        style="@style/Widget.Theme.Email.hv17TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text="@string/settings_guidance_qq_3_text" />
+
+    <ImageView
+        android:id="@+id/iv_qq2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hv_245dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/hv_16dp"
+        android:layout_marginEnd="@dimen/hv_173dp"
+        android:contentDescription="TODO" />
+
+
+</LinearLayout>

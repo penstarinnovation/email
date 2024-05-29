@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@+id/fl_top"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--通用title-->
+        <include
+            android:id="@+id/title"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/title_bar"/>
+        <!--刷新-->
+        <ImageView
+            android:layout_marginEnd="@dimen/hv_25dp"
+            android:id="@+id/iv_refresh"
+            android:src="@drawable/icon_refresh"
+            android:layout_width="@dimen/hv_24dp"
+            android:layout_height="@dimen/hv_24dp"
+            android:layout_gravity="end|center_vertical"/>
+
+        <!--顶部操作按钮-->
+        <include
+            android:visibility="invisible"
+            android:id="@+id/bar_main_action"
+            android:layout_gravity="end|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            layout="@layout/bar_main_button_group"/>
+    </FrameLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintTop_toBottomOf="@+id/fl_top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <!-- 左侧选项列表-->
+        <LinearLayout
+            android:id="@+id/ll_left"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="@dimen/hv_136dp"
+            android:layout_height="match_parent">
+        <!--顶部固定选项-->
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@+id/ll_address_book"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hv_58dp">
+                <ImageView
+                    android:layout_marginStart="@dimen/hv_14dp"
+                    android:src="@drawable/icon_contact"
+                    android:layout_width="@dimen/hv_20dp"
+                    android:layout_height="@dimen/hv_20dp"/>
+                <TextView
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginStart="@dimen/hv_8dp"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/hv_16sp"
+                    android:textColor="@color/black"
+                    android:text="@string/common_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@+id/ll_email_setting"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hv_58dp">
+                <ImageView
+                    android:layout_marginStart="@dimen/hv_14dp"
+                    android:src="@drawable/icon_email_mark_as_unread"
+                    android:layout_width="@dimen/hv_20dp"
+                    android:layout_height="@dimen/hv_20dp"/>
+                <TextView
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginStart="@dimen/hv_8dp"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/hv_16sp"
+                    android:textColor="@color/black"
+                    android:text="@string/common_email_setup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@+id/ll_attachment_manage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hv_58dp">
+                <ImageView
+                    android:layout_marginStart="@dimen/hv_14dp"
+                    android:src="@drawable/icon_attachment"
+                    android:layout_width="@dimen/hv_20dp"
+                    android:layout_height="@dimen/hv_20dp"/>
+                <TextView
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginStart="@dimen/hv_8dp"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/hv_16sp"
+                    android:textColor="@color/black"
+                    android:text="@string/common_attachment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+<!--            可折叠账号列表-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:orientation="vertical"
+                android:id="@+id/rv_account"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+        <View
+            android:background="@color/black"
+            app:layout_constraintStart_toEndOf="@id/ll_left"
+            android:id="@+id/divider"
+            android:layout_width="@dimen/hv_1dp"
+            android:layout_height="match_parent"/>
+<!--        右侧展示列表区域-->
+        <LinearLayout
+            android:id="@+id/cl_header"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/divider">
+
+            <include layout="@layout/item_email_header"/>
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hv_1dp"
+                android:background="@color/black"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--  邮件列表-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

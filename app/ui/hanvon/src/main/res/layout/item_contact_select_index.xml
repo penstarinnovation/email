@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_index"
+    style="@style/Widget.Theme.Email.hv17TextView"
+    android:layout_width="@dimen/hv_30dp"
+    android:layout_height="@dimen/hv_30dp"
+    tools:background="@drawable/shape_black_circle"
+    tools:text="A"
+    tools:textColor="@color/white" />

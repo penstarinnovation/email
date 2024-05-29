@@ -1,0 +1,25 @@
+<resources>
+    <declare-styleable name="NodeSeekBar">
+        <attr name="seek_bar_icon_complete" format="reference" />
+        <attr name="seek_bar_icon_un_complete" format="reference" />
+        <attr name="seek_bar_complete_num" format="integer" />
+        <attr name="seek_bar_fill_color" format="color" />
+        <attr name="seek_bar_background_color" format="color" />
+        <attr name="seek_bar_height" format="dimension" />
+        <attr name="seek_bar_stroke_width" format="dimension" />
+        <attr name="seek_bar_node_radius" format="dimension" />
+        <attr name="seek_bar_node_text" format="reference"/>
+        <attr name="seek_bar_text_size" format="dimension" />
+        <attr name="seek_bar_text_top_margin" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="EmailLoadingView">
+        <attr name="emial_loading_view_node_icon_complete" format="reference" />
+        <attr name="emial_loading_view_node_icon_un_complete" format="reference" />
+        <attr name="email_loading_view_node_radius" format="dimension" />
+        <attr name="email_loading_view_node_width" format="dimension" />
+        <attr name="email_loading_view_node_height" format="dimension" />
+        <attr name="email_loading_view_node_num" format="integer" />
+    </declare-styleable>
+
+</resources>

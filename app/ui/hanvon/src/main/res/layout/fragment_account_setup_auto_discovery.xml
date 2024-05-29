@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tool_layout"
+        layout="@layout/title_bar" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/Widget.Theme.Email.hvBoldTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hv_34dp"
+        android:text="@string/account_setup_title"
+        android:textSize="@dimen/hv_31sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/Widget.Theme.Email.hv17TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="@dimen/hv_85dp"
+        android:layout_marginTop="@dimen/hv_46dp"
+        android:text="@string/account_setup_auto_discovery_address_password_code_tips_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/hv_45dp"
+        android:layout_marginTop="@dimen/hv_23dp"
+        android:layout_marginEnd="@dimen/hv_80dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Widget.Theme.Email.hv17TextView"
+            android:layout_width="@dimen/hv_150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/hv_17dp"
+            android:gravity="end"
+            android:text="@string/common_email_text" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/Widget.Theme.Email.hvEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/common_email_hint_text"
+            android:paddingStart="@dimen/hv_17dp"
+            android:paddingTop="@dimen/hv_15dp"
+            android:paddingEnd="@dimen/hv_17dp"
+            android:paddingBottom="@dimen/hv_15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/hv_45dp"
+        android:layout_marginTop="@dimen/hv_35dp"
+        android:layout_marginEnd="@dimen/hv_80dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Widget.Theme.Email.hv17TextView"
+            android:layout_width="@dimen/hv_150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/hv_17dp"
+            android:gravity="end"
+            android:text="@string/common_p_or_a_text" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_white_stroke_1_black_corners_10"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_password"
+                android:background="@color/transparent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/hv_12dp"
+                android:layout_weight="1"
+                android:inputType="textPassword"
+                android:hint="@string/common_p_or_a_hint_text"
+                android:paddingStart="@dimen/hv_17dp"
+                android:paddingTop="@dimen/hv_15dp"
+                android:paddingEnd="@dimen/hv_17dp"
+                android:paddingBottom="@dimen/hv_15dp"
+                android:textSize="@dimen/hv_17sp" />
+
+            <ImageView
+                android:id="@+id/iv_visibility"
+                android:layout_width="@dimen/hv_23dp"
+                android:layout_height="@dimen/hv_23dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/hv_17dp"
+                android:src="@drawable/icon_hide"
+                android:contentDescription="TODO" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btn_manually_discovery"
+        style="@style/Widget.Theme.Email.hv17TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginStart="@dimen/hv_45dp"
+        android:layout_marginTop="@dimen/hv_23dp"
+        android:layout_marginEnd="@dimen/hv_80dp"
+        android:text="@string/account_setup_auto_discovery_button_configuration_text" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btn_next"
+        style="@style/Widget.Theme.Email.hv17Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/hv_143dp"
+        android:layout_marginTop="@dimen/hv_46dp"
+        android:layout_marginEnd="@dimen/hv_143dp"
+        android:text="@string/common_button_next" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btn_tip"
+        style="@style/Widget.Theme.Email.hv17TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/hv_42dp"
+        android:layout_marginTop="@dimen/hv_23dp"
+        android:layout_marginEnd="@dimen/hv_42dp"
+        android:gravity="start"
+
+        android:text="@string/account_setup_auto_discovery_code_tips_text" />
+
+</LinearLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    页面-->
+    <string name="message_main_activity_label">Email_Main_Activity</string>
+    <string name="message_main_activity_title">Email_Main_Activity</string>
+    <string name="message_compose_fragment_label">Email_Compose_Fragment</string>
+    <string name="message_compose_fragment_title">Compose email</string>
+    <string name="welcome_fragment_label">Welcome_Fragment</string>
+    <string name="welcome_fragment_title">Welcome_Fragment</string>
+    <string name="account_setup_fragment_label">Account_Setup_Fragment</string>
+    <string name="account_setup_auto_discovery_fragment_label">Account_Setup_Auto_Discovery_Fragment</string>
+    <string name="account_setup_auto_discovery_fragment_title">Set</string>
+    <string name="account_setup_account_password_fragment_label">Account_Setup_Account_Password_Fragment</string>
+    <string name="account_setup_account_password_fragment_title">Set</string>
+    <string name="account_setup_server_type_fragment_label">Account_Setup_Server_Type_Fragment</string>
+    <string name="account_setup_server_type_fragment_title">Set</string>
+    <string name="account_setup_incoming_server_settings_fragment_label">Account_Setup_Incoming_Server_Settings_Fragment</string>
+    <string name="account_setup_incoming_server_settings_fragment_title">Set</string>
+    <string name="account_setup_outgoing_server_settings_fragment_label">Account_Setup_Outgoing_Server_Settings_Fragment</string>
+    <string name="account_setup_outgoing_server_settings_fragment_title">Set</string>
+    <string name="account_setup_done_fragment_label">Account_Setup_Done_Fragment</string>
+    <string name="account_setup_done_fragment_title">Set</string>
+    <string name="contact_select_fragment_label">Contact_Select_Fragment</string>
+    <string name="contact_select_fragment_title">Select X contacts</string>
+    <string name="setting_config_fragment_label">Setting_Config_Fragment</string>
+    <string name="setting_config_fragment_title">Email Setting</string>
+    <string name="setting_guidance_fragment_label">Setting_Guidance_Fragment</string>
+    <string name="setting_guidance_fragment_title">Email setup method</string>
+
+    <!--    自定义view-->
+    <string name="node_seek_bar_setup_account_password_text">Account password</string>
+    <string name="node_seek_bar_setup_server_type_text">Server type</string>
+    <string name="node_seek_bar_setup_server_settings_text">Server settings</string>
+    <string name="node_seek_bar_setup_incoming_config_text">Incoming server settings</string>
+    <string name="node_seek_bar_setup_outgoing_config_text">Outgoing server settings</string>
+    <string name="node_seek_bar_setup_done_text">Done</string>
+
+    <!--    自定义dialog-->
+    <string name="dialog_save_file_title">save file</string>
+
+    <string name="dialog_login_fail_title">Login failed</string>
+    <string name="dialog_login_fail_content">Due to the restrictions of QQ/163/126/iCloud mailbox servers, users may need to set up authorization codes on the mobile client in advance to ensure successful login. Otherwise, you may encounter login failure problems.</string>
+    <string name="dialog_login_fail_button_text">View authorization code setup methods for mobile end</string>
+
+    <string name="dialog_login_tip_title"> XX mailbox login tips</string>
+    <string name="dialog_login_tip_content">When logging into XX mailbox, enter XX authorization code as the password</string>
+    <string name="dialog_login_tip_left_button_text">Understood</string>
+    <string name="dialog_login_tip_right_button_text">Authorization code acquisition method</string>
+
+    <string name="dialog_compose_loading_content">Sending email...</string>
+
+    <string name="dialog_login_loading_content">Configuring, please wait...</string>
+
+    <string name="dialog_create_contact_title">create_contact</string>
+    <string name="dialog_create_contact_name_text">Name</string>
+    <string name="dialog_create_contact_company_text">Company</string>
+    <string name="dialog_create_contact_email_text">Email</string>
+    <string name="dialog_create_contact_phone_text">Phone</string>
+    <string name="dialog_create_contact_address_text">Address</string>
+    <string name="dialog_create_contact_note_text">Note</string>
+
+    <string name="dialog_logout_title">Logout prompt</string>
+    <string name="dialog_logout_content_head">退出邮箱，是否保留本地数据？</string>
+    <string name="dialog_logout_content_foot">本地数据包含存在的本地邮件，退出后，将彻底删除这部分邮件无法找回，请谨慎操作</string>
+    <string name="dialog_logout_left_button_text">不保留本地数据</string>
+    <string name="dialog_logout_right_button_text">保留本地数据</string>
+
+
+    <string name="dialog_server_setting_outgoing_title">Outgoing Setting</string>
+    <string name="dialog_server_setting_incoming_title">Incoming Setting</string>
+    <string name="dialog_server_setting_left_button_text">Cancel</string>
+    <string name="dialog_server_setting_right_button_text">完成配置</string>
+
+    <!--自定义popup-->
+    <string name="popup_email_mark_as_read_text">Mark as read</string>
+    <string name="popup_email_mark_as_unread_text">Mark as unread</string>
+    <string name="popup_email_flagged_text">Flag</string>
+    <string name="popup_email_unflag_text">Unflag</string>
+    <string name="popup_email_reply_text">Reply</string>
+    <string name="popup_email_reply_all_text">Reply all</string>
+    <string name="popup_email_forward_text">Forward</string>
+    <string name="popup_email_batch_manage_text">Batch management</string>
+    <string name="popup_email_delete_text">Delete</string>
+    <string name="popup_email_delete_permanently_text">Delete permanently</string>
+
+    <string name="popup_contact_add_person_text">Add to contacts</string>
+    <string name="popup_contact_delete_person_text">Delete a contact</string>
+    <string name="popup_contact_edit">Edit</string>
+    <string name="popup_contact_delete">Delete</string>
+
+
+    <!--    通用-->
+    <string name="common_button_next">Next</string>
+    <string name="common_button_pre">Previous</string>
+    <string name="common_button_done">Done</string>
+    <string name="common_button_exit">Exit</string>
+
+    <string name="common_account_text">Account</string>
+    <string name="common_email_account_hint_text">Please enter the account name</string>
+    <string name="common_email_text">Email address</string>
+    <string name="common_email_hint_text">Enter your email address</string>
+    <string name="common_p_or_a_text">Password or Authorization</string>
+    <string name="common_p_or_a_hint_text">Enter your password or Authorization code</string>
+    <string name="common_password_text">Password</string>
+    <string name="common_password_hint_text">Enter your Password</string>
+    <string name="common_port_text">Port</string>
+    <string name="common_security_text">SSL</string>
+    <string name="common_server_setting_text">Server settings</string>
+    <string name="common_signature_setting_text">Signature settings</string>
+
+    <string name="common_incoming_server_pop_text">POP3 Server</string>
+    <string name="common_incoming_server_imap_text">IMAP Server</string>
+    <string name="common_outgoing_server_smtp_text">SMTP Server</string>
+    <string name="common_incoming_server_pop_type">POP3</string>
+    <string name="common_incoming_server_imap_type">IMAP</string>
+    <string name="common_outgoing_server_smtp_type">SMTP</string>
+
+    <string name="common_pop3_address_hint_text">Password enter POP3 Server</string>
+    <string name="common_imap_address_hint_text">Password enter IMAP Server</string>
+    <string name="common_smtp_address_hint_text">Password enter SMTP Server</string>
+    <string name="common_port_hint_text">Please input port</string>
+
+    <string name="common_send_text">Send</string>
+    <string name="common_set_text">Set</string>
+
+    <string name="common_sender_text">Sender</string>
+    <string name="common_recipient_text">Recipient</string>
+    <string name="common_subject_text">Subject</string>
+    <string name="common_cc_text">CC</string>
+    <string name="common_bcc_text">BCC</string>
+    <string name="common_cc_bcc_text">CC/BCC</string>
+    <string name="common_time_text">Time</string>
+
+    <string name="common_attachment_view_text">View</string>
+    <string name="common_attachment_delete_text">Delete</string>
+    <string name="common_attachment_view_details">View details</string>
+    <string name="common_attachment_added">X attachments added</string>
+
+    <string name="common_contact_new">New contact</string>
+    <string name="common_contact_delete">Delete contact</string>
+    <string name="common_search">Search</string>
+
+    <string name="common_contact">Contacts</string>
+    <string name="common_attachment">Attachment management</string>
+    <string name="common_email_setup">Email setup</string>
+
+    <string name="common_select_all">Select all</string>
+    <string name="common_deselect_all">Deselect all</string>
+
+    <string name="welcome_title">Welcome to Email</string>
+    <string name="welcome_message">Click the login button to bind your account and send/receive emails</string>
+
+    <string name="account_setup_title">Set up email</string>
+
+    <string name="account_setup_auto_discovery_address_password_code_tips_text">Enter email account and password to use your mailbox</string>
+    <string name="account_setup_auto_discovery_button_configuration_text"><u>Manually configure server</u></string>
+    <string name="account_setup_auto_discovery_code_tips_text">Can\'t log in to QQ/163/126/icloud or enterprise email? Try logging in to the web client to enable IMAP service; set the authorization code on the mobile client and log in again using the authorization code as the password.<u>Click here to view the web client setup methods for common email.</u></string>
+
+    <string name="account_setup_done_tips_text">Email set up successfully, you can use it now</string>
+    <string name="account_setup_done_account_text">Create a name for this account</string>
+    <string name="account_setup_done_account_hint_text">Please enter the account name</string>
+    <string name="account_setup_done_display_name_text">Your name will be displayed on outgoing emails</string>
+    <string name="account_setup_done_display_name_hint_text">Please enter display name</string>
+
+
+    <string name="settings_guidance_qq_1_text">1. Enter https://mail.qq.com on your computer\'s browser, log in to your email account</string>
+    <string name="settings_guidance_qq_2_text">2. After entering the email home page, click Settings -> Account</string>
+    <string name="settings_guidance_qq_3_text">3. Turn on IMAP/SMTP service, verify the security protection, get the authorization code, and enter the authorization code into the password box on the email login page of your paper tablet device</string>
+
+    <string name="settings_guidance_netease_1_text">1. Enter https://mail.163.com on your computer\'s browser, log in to your email account</string>
+    <string name="settings_guidance_netease_2_text">2. After entering the email home page, click Settings -> POP3/SMTP/IMAP</string>
+    <string name="settings_guidance_netease_3_text">3. Check MAP/SMTP service, and set the authorization code according to the steps. Then enter the authorization code into the password box on the email login page of your paper tablet device</string>
+
+    <string name="settings_guidance_icloud_1_text">1. Enter https://appleid.apple.com on your computer\'s browser, log in to your email account</string>
+    <string name="settings_guidance_icloud_2_text">2. Generate an APP-specific password under the security section</string>
+    <string name="settings_guidance_icloud_3_text">3. Use your username and special password to log in your email account on paper tablet</string>
+
+    <string name="email_compose_title">Compose email</string>
+    <string name="email_compose_content_hint_text">Please enter the email content</string>
+    <string name="total_msg">共%s封邮件</string>
+
+
+</resources>

@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/hv_17dp"
+    tools:visibility="visible">
+
+    <View
+        android:id="@+id/v_divider_h_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hv_1dp"
+        android:layout_marginBottom="@dimen/hv_16dp"
+        android:background="@color/black" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btn_dialog_foot"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/hv_17sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/hv_2dp"
+        android:text="@string/dialog_confirm_one_button" />
+
+</LinearLayout>

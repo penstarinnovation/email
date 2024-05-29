@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_account"
+        style="@style/Widget.Theme.Email.hv17TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="12313@qq.com" />
+
+    <View
+        android:id="@+id/v_block"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/hv_23dp" />
+
+</LinearLayout>

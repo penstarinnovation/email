@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Email" parent="Theme.Material3.DayNight">
+        <!-- Primary brand color. -->
+    </style>
+
+    <style name="Theme.Email.NoActionBar" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+    </style>
+
+</resources>

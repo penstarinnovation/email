@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_head"
+    style="@style/Widget.Theme.Email.hvBoldTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/hv_11.5dp"
+    android:paddingBottom="@dimen/hv_11.5dp"
+    android:textSize="@dimen/hv_19sp"
+    tools:text="A" />

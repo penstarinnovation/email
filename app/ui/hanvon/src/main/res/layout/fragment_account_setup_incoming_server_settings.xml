@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tool_layout"
+        layout="@layout/title_bar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/Widget.Theme.Email.hvBoldTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hv_34dp"
+        android:text="@string/account_setup_title"
+        android:textSize="@dimen/hv_31sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/hv_31dp">
+
+        <com.hvmail.legacy.view.NodeSeekBar
+            android:id="@+id/node_seek"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/hv_70dp"
+            android:paddingEnd="@dimen/hv_70dp"
+            app:seek_bar_background_color="@color/white"
+            app:seek_bar_complete_num="2"
+            app:seek_bar_fill_color="@color/black"
+            app:seek_bar_height="@dimen/seek_bar_height"
+            app:seek_bar_node_radius="@dimen/seek_bar_node_radius"
+            app:seek_bar_stroke_width="@dimen/seek_bar_stroke_width"
+            app:seek_bar_text_size="@dimen/seek_bar_text_size"
+            app:seek_bar_text_top_margin="@dimen/seek_bar_text_top_margin" />
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hv_46dp"
+        android:layout_marginEnd="@dimen/hv_77dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Widget.Theme.Email.hv17TextView"
+            android:layout_width="@dimen/hv_179dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/hv_17dp"
+            android:gravity="end"
+            android:text="@string/common_email_text" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/Widget.Theme.Email.hvEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/common_email_hint_text"
+            android:paddingStart="@dimen/hv_17dp"
+            android:paddingTop="@dimen/hv_15dp"
+            android:paddingEnd="@dimen/hv_17dp"
+            android:paddingBottom="@dimen/hv_15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hv_35dp"
+        android:layout_marginEnd="@dimen/hv_77dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Widget.Theme.Email.hv17TextView"
+            android:layout_width="@dimen/hv_179dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/hv_17dp"
+            android:gravity="end"
+            android:text="@string/common_p_or_a_text" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_white_stroke_1_black_corners_10"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/hv_12dp"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:hint="@string/common_p_or_a_hint_text"
+                android:inputType="textPassword"
+                android:paddingStart="@dimen/hv_17dp"
+                android:paddingTop="@dimen/hv_15dp"
+                android:paddingEnd="@dimen/hv_17dp"
+                android:paddingBottom="@dimen/hv_15dp"
+                android:textSize="@dimen/hv_17sp" />
+
+            <ImageView
+                android:id="@+id/iv_visibility"
+                android:layout_width="@dimen/hv_23dp"
+                android:layout_height="@dimen/hv_23dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/hv_17dp"
+                android:src="@drawable/icon_hide" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hv_46dp"
+        android:layout_marginEnd="@dimen/hv_77dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Widget.Theme.Email.hv17TextView"
+            android:layout_width="@dimen/hv_179dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/hv_17dp"
+            android:gravity="end"
+            android:text="@string/common_incoming_server_pop_text" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/Widget.Theme.Email.hvEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/common_pop3_address_hint_text"
+            android:paddingStart="@dimen/hv_17dp"
+            android:paddingTop="@dimen/hv_15dp"
+            android:paddingEnd="@dimen/hv_17dp"
+            android:paddingBottom="@dimen/hv_15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hv_46dp"
+        android:layout_marginEnd="@dimen/hv_77dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Widget.Theme.Email.hv17TextView"
+            android:layout_width="@dimen/hv_179dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/hv_17dp"
+            android:gravity="end"
+            android:text="@string/common_port_text" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/Widget.Theme.Email.hvEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/common_port_hint_text"
+            android:paddingStart="@dimen/hv_17dp"
+            android:paddingTop="@dimen/hv_15dp"
+            android:paddingEnd="@dimen/hv_17dp"
+            android:paddingBottom="@dimen/hv_15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hv_46dp"
+        android:layout_marginEnd="@dimen/hv_77dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Widget.Theme.Email.hv17TextView"
+            android:layout_width="@dimen/hv_179dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/hv_17dp"
+            android:gravity="end"
+            android:text="@string/common_security_text" />
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/sw_security"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:thumbTint="@color/selector_switch_thumb_tint_colorstate_list"
+            app:trackTint="@color/selector_switch_track_colorstate_list" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/hv_172dp"
+        android:layout_marginTop="@dimen/hv_46dp"
+        android:layout_marginEnd="@dimen/hv_172dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btn_pre"
+            style="@style/Widget.Theme.Email.hv17Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/common_button_pre" />
+
+        <View
+            android:layout_width="@dimen/hv_79dp"
+            android:layout_height="1dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btn_next"
+            style="@style/Widget.Theme.Email.hv17Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/common_button_next" />
+
+    </LinearLayout>
+
+</LinearLayout>

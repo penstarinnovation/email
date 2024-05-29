@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="SeekBarStyle" format="reference" />
+    <attr name="EmailLoadingViewStyle" format="reference" />
+    <attr name="AddContactLayoutStyle" format="reference" />
+</resources>

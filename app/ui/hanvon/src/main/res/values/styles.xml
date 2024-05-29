@@ -1,0 +1,23 @@
+<resources>
+    <style name="Widget.Theme.Email.NodeSeekbar" parent="">
+        <item name="seek_bar_icon_complete">@drawable/icon_node_seek_complete</item>
+        <item name="seek_bar_icon_un_complete">@drawable/icon_node_seek_uncomplete</item>
+        <item name="seek_bar_fill_color">@color/aquamarine</item>
+        <item name="seek_bar_background_color">@color/white</item>
+        <item name="seek_bar_node_text">@array/account_setup_node_list</item>
+    </style>
+
+    <style name="Widget.Theme.Email.LoadingView" parent="">
+        <item name="emial_loading_view_node_icon_complete">@drawable/shape_black_corners_3</item>
+        <item name="emial_loading_view_node_icon_un_complete">
+            @drawable/shape_white_stroke_1_black_corners_3
+        </item>
+        <item name="email_loading_view_node_num">@integer/email_loading_view_node_num</item>
+        <item name="email_loading_view_node_radius">@dimen/email_loading_view_node_radius</item>
+        <item name="email_loading_view_node_width">@dimen/email_loading_view_node_width</item>
+        <item name="email_loading_view_node_height">@dimen/email_loading_view_node_height</item>
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/hv_51dp"
+    android:gravity="end|center_vertical"
+    android:background="@color/white"
+    android:layoutDirection="rtl">
+
+    <LinearLayout
+        android:id="@+id/ll_unselect_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/hv_16dp"
+        android:paddingEnd="@dimen/hv_16dp">
+
+        <ImageView
+            android:layout_width="@dimen/hv_23dp"
+            android:layout_height="@dimen/hv_23dp"
+            android:src="@drawable/icon_select_all" />
+
+        <TextView
+            style="@style/Widget.Theme.Email.hv15TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/common_deselect_all" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_select_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/hv_16dp"
+        android:paddingEnd="@dimen/hv_16dp">
+
+        <ImageView
+            android:layout_width="@dimen/hv_23dp"
+            android:layout_height="@dimen/hv_23dp"
+            android:src="@drawable/icon_deselect_all" />
+
+        <TextView
+            style="@style/Widget.Theme.Email.hv15TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/common_select_all" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/hv_16dp"
+        android:paddingEnd="@dimen/hv_16dp">
+
+        <ImageView
+            android:layout_width="@dimen/hv_23dp"
+            android:layout_height="@dimen/hv_23dp"
+            android:src="@drawable/icon_email_unflag" />
+
+        <TextView
+            style="@style/Widget.Theme.Email.hv15TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/popup_email_flagged_text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/hv_16dp"
+        android:paddingEnd="@dimen/hv_16dp">
+
+        <ImageView
+            android:layout_width="@dimen/hv_23dp"
+            android:layout_height="@dimen/hv_23dp"
+            android:src="@drawable/icon_email_mark_as_read" />
+
+        <TextView
+            style="@style/Widget.Theme.Email.hv15TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/popup_email_mark_as_read_text" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/hv_16dp"
+        android:paddingEnd="@dimen/hv_16dp">
+
+        <ImageView
+            android:layout_width="@dimen/hv_23dp"
+            android:layout_height="@dimen/hv_23dp"
+            android:src="@drawable/icon_email_delete" />
+
+        <TextView
+            style="@style/Widget.Theme.Email.hv15TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/popup_email_delete_text" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

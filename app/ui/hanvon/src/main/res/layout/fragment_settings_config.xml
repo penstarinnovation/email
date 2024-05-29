@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.settings.config.SettingConfigFragment">
+
+    <include
+        android:id="@+id/tool_layout"
+        layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/hv_24dp"
+        android:layout_marginTop="@dimen/hv_17dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_account"
+            style="@style/Widget.Theme.Email.hv17TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/hv_8dp"
+            android:text="123123@qq.com" />
+
+        <ImageView
+            android:id="@+id/iv_arrpw"
+            android:layout_width="@dimen/hv_14dp"
+            android:layout_height="@dimen/hv_14dp"
+            android:src="@drawable/icon_arrpw_down"
+            tools:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_add_account"
+            style="@style/Widget.Theme.Email.hv17TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/hv_14dp"
+            android:background="@drawable/shape_white_stroke_1_black_corners_12"
+            android:padding="@dimen/hv_12dp"
+            android:text="Add email" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/hv_24dp"
+        android:layout_marginTop="@dimen/hv_31dp"
+        android:text="@string/common_server_setting_text"
+        android:textColor="@color/black"
+        android:textSize="@dimen/hv_19sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/ll_incoming_settin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_incoming_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/hv_24dp"
+            android:layout_marginTop="@dimen/hv_17dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/hv_32dp"
+                android:layout_height="0dp"
+                android:src="@drawable/icon_incoming"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/Widget.Theme.Email.hv17TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/hv_13dp"
+                android:text="接收设置"
+                app:layout_constraintBottom_toTopOf="@id/textView2"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/Widget.Theme.Email.hv14TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/hv_13dp"
+                android:layout_marginTop="@dimen/hv_10dp"
+                android:text="用户名、密码和其他接收服务器设置"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@id/textView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hv_1dp"
+            android:layout_marginTop="@dimen/hv_17dp"
+            android:background="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_outgoing_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_outgoing_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/hv_24dp"
+            android:layout_marginTop="@dimen/hv_17dp">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="@dimen/hv_32dp"
+                android:layout_height="0dp"
+                android:src="@drawable/icon_outcoming"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/Widget.Theme.Email.hv17TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/hv_13dp"
+                android:text="外发设置"
+                app:layout_constraintBottom_toTopOf="@id/textView4"
+                app:layout_constraintStart_toEndOf="@+id/imageView1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/Widget.Theme.Email.hv14TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/hv_13dp"
+                android:layout_marginTop="@dimen/hv_10dp"
+                android:text="用户名、密码和其他发送服务器设置"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView1"
+                app:layout_constraintTop_toBottomOf="@id/textView3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/hv_24dp"
+        android:layout_marginTop="@dimen/hv_31dp"
+        android:text="@string/common_signature_setting_text"
+        android:textColor="@color/black"
+        android:textSize="@dimen/hv_19sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/hv_24dp"
+        android:layout_marginTop="@dimen/hv_17dp"
+        android:layout_marginEnd="@dimen/hv_24dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape_white_stroke_1_black_corners_12"
+        android:gravity="start|top"
+        android:padding="@dimen/hv_10dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btn_logout"
+        style="@style/Widget.Theme.Email.hv17Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/hv_159dp"
+        android:layout_marginTop="@dimen/hv_46dp"
+        android:layout_marginEnd="@dimen/hv_159dp"
+        android:layout_marginBottom="@dimen/hv_152dp"
+        android:text="退出当前账号" />
+</LinearLayout>

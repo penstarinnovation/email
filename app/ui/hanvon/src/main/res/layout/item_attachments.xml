@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/hv_10dp"
+    android:paddingBottom="@dimen/hv_10dp">
+
+    <ImageView
+        android:layout_width="@dimen/hv_24dp"
+        android:layout_height="@dimen/hv_24dp"
+        android:layout_gravity="center" />
+
+    <TextView
+        style="@style/Widget.Theme.Email.hv15TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/hv_12dp"
+        android:layout_weight="1"
+        android:gravity="start"
+        tools:text="工作、消费、新穷人.pdf" />
+
+    <TextView
+        style="@style/Widget.Theme.Email.hv15Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/hv_17dp"
+        android:paddingStart="@dimen/hv_12dp"
+        android:paddingTop="@dimen/hv_6dp"
+        android:paddingEnd="@dimen/hv_12dp"
+        android:paddingBottom="@dimen/hv_6dp"
+        android:text="@string/common_attachment_view_text" />
+
+    <TextView
+        style="@style/Widget.Theme.Email.hv15Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/hv_17dp"
+        android:paddingStart="@dimen/hv_12dp"
+        android:paddingTop="@dimen/hv_6dp"
+        android:paddingEnd="@dimen/hv_12dp"
+        android:paddingBottom="@dimen/hv_6dp"
+        android:text="@string/common_attachment_delete_text" />
+
+
+</LinearLayout>

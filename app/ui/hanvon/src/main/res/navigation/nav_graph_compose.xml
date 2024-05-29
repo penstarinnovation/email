@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_compose"
+    app:startDestination="@id/Welcome">
+
+    <fragment
+        android:id="@+id/Welcome"
+        android:name="com.hvmail.legacy.ui.WelcomeFragment"
+        android:label="@string/welcome_fragment_label"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_Welcome_to_AccountSetup"
+            app:destination="@id/AccountSetup" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/AccountSetup"
+        android:name="com.hvmail.legacy.ui.account.AccountSetupFragment"
+        android:label="@string/account_setup_fragment_label"
+        tools:layout="@layout/fragment_account_setup">
+
+        <action
+            android:id="@+id/action_AccountSetup_to_EmailCompose"
+            app:destination="@id/EmailCompose"
+            app:popUpTo="@id/EmailCompose"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/EmailCompose"
+        android:name="com.hvmail.legacy.ui.compose.ComposeContentFragment"
+        android:label="@string/message_compose_fragment_label"
+        tools:layout="@layout/fragment_compose_content">
+
+        <action
+            android:id="@+id/action_EmailCompose_to_ContactSelect"
+            app:destination="@id/ContactSelect" />
+
+        <action
+            android:id="@+id/action_EmailCompose_to_SettingConfig"
+            app:destination="@id/SettingConfig" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/ContactSelect"
+        android:name="com.hvmail.legacy.ui.contact.ContactSelectFragment"
+        android:label="@string/contact_select_fragment_label"
+        tools:layout="@layout/fragment_contact_select">
+        <action
+            android:id="@+id/action_ContactSelect_to_EmailCompose"
+            app:destination="@id/EmailCompose"
+            app:popUpTo="@id/EmailCompose"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/SettingConfig"
+        android:name="com.hvmail.legacy.ui.settings.config.SettingConfigFragment"
+        android:label="@string/setting_config_fragment_label"
+        tools:layout="@layout/fragment_settings_config">
+
+        <action
+            android:id="@+id/action_SettingConfig_to_AccountSetup"
+            app:destination="@id/AccountSetup" />
+        <action
+            android:id="@+id/action_SettingConfig_to_EmailCompose"
+            app:destination="@id/EmailCompose"
+            app:popUpTo="@id/EmailCompose"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+
+</navigation>

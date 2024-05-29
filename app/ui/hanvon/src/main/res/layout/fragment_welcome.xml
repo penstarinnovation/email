@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tool_layout"
+        layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/hv_203dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="@dimen/email_onboarding_welcome_logo_width"
+            android:layout_height="@dimen/email_onboarding_welcome_logo_height"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/icon_onboarding_welcome" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Widget.Theme.Email.hvBoldTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/hv_31dp"
+            android:text="@string/welcome_title"
+            android:textSize="@dimen/hv_31sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Widget.Theme.Email.hv17TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/hv_23dp"
+            android:text="@string/welcome_message" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btn_welcome_next"
+            style="@style/Widget.Theme.Email.hv17Button"
+            android:layout_width="@dimen/hv_412dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/hv_76dp"
+            android:text="@string/common_button_next" />
+
+    </LinearLayout>
+
+</LinearLayout>

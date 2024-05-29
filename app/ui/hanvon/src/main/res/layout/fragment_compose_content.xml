@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tool_layout"
+        layout="@layout/title_bar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hv_50dp"
+        android:layout_marginEnd="@dimen/hv_24dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textview11"
+            style="@style/Widget.Theme.Email.hv17TextView"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="end"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/common_recipient_text" />
+
+<!--        <com.example.email.view.AddContactView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            app:layout_constraintEnd_toStartOf="@id/linearlayout"-->
+<!--            app:layout_constraintHorizontal_weight="1"-->
+<!--            app:layout_constraintStart_toStartOf="@id/textview13" />-->
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/hv_17dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+                android:id="@+id/btn_recipient_contact_select"
+                android:layout_width="@dimen/hv_20dp"
+                android:layout_height="@dimen/hv_20dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon_add" />
+
+            <TextView
+                android:id="@+id/btn_CC_BCC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/hv_12dp"
+                android:background="@drawable/shape_white_stroke_1_black_corners_14"
+                android:paddingStart="@dimen/hv_12dp"
+                android:paddingTop="@dimen/hv_4dp"
+                android:paddingEnd="@dimen/hv_12dp"
+                android:paddingBottom="@dimen/hv_4dp"
+                android:text="@string/common_cc_bcc_text"
+                tools:visibility="visible" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/textview13"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/hv_1dp"
+            android:layout_marginStart="@dimen/hv_14dp"
+            android:background="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textview11" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_cc_bcc"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hv_50dp"
+            android:layout_marginEnd="@dimen/hv_24dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+            <TextView
+
+                android:id="@+id/textView10"
+                style="@style/Widget.Theme.Email.hv17TextView"
+                android:layout_width="80dp"
+
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center_vertical"
+                android:gravity="end"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/common_cc_text" />
+
+<!--            <com.example.email.view.AddContactView-->
+<!--                android:id="@+id/addContactView_cc"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginEnd="@dimen/hv_10dp"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toStartOf="@id/btn_cc_contact_select"-->
+<!--                app:layout_constraintStart_toStartOf="@id/view5"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+            <ImageView
+                android:id="@+id/btn_cc_contact_select"
+                android:layout_width="@dimen/hv_20dp"
+                android:layout_height="@dimen/hv_20dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon_add"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+
+                android:id="@+id/view5"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/hv_14dp"
+                android:background="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@id/textView10" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hv_50dp"
+            android:layout_marginEnd="@dimen/hv_24dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+            <TextView
+                android:id="@+id/textView9"
+                style="@style/Widget.Theme.Email.hv17TextView"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center_vertical"
+
+                android:gravity="end"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:text="@string/common_bcc_text" />
+
+<!--            <com.example.email.view.AddContactView-->
+<!--                android:id="@+id/addContactView_bcc"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginEnd="@dimen/hv_10dp"-->
+<!--                app:layout_constraintEnd_toStartOf="@id/btn_bcc_contact_select"-->
+<!--                app:layout_constraintStart_toStartOf="@id/view4" />-->
+
+            <ImageView
+                android:id="@+id/btn_bcc_contact_select"
+                android:layout_width="@dimen/hv_20dp"
+                android:layout_height="@dimen/hv_20dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon_add"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/hv_14dp"
+                android:background="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+
+                app:layout_constraintStart_toEndOf="@id/textView9" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hv_50dp"
+        android:layout_marginEnd="@dimen/hv_24dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/Widget.Theme.Email.hv17TextView"
+            android:layout_width="@dimen/hv_80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="end"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/common_sender_text" />
+
+        <TextView
+            android:id="@+id/tv_compose_sender"
+            style="@style/Widget.Theme.Email.hv17TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/hv_14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textView5"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="156123123@123.com" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="@dimen/hv_14dp"
+            android:layout_height="@dimen/hv_14dp"
+            android:layout_marginStart="@dimen/hv_8dp"
+            android:src="@drawable/icon_arrpw_down"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_compose_sender"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/hv_1dp"
+            android:layout_marginStart="@dimen/hv_14dp"
+            android:background="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@id/textView5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hv_50dp"
+        android:layout_marginEnd="@dimen/hv_24dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/textView8">
+
+        <TextView
+            android:id="@+id/textView7"
+            style="@style/Widget.Theme.Email.hv17TextView"
+            android:layout_width="@dimen/hv_80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="end"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/common_subject_text" />
+
+        <EditText
+            android:id="@+id/tv_compose_subject"
+            style="@style/Widget.Theme.Email.hv17TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/hv_14dp"
+            android:background="@color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textView7"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="XXX主题" />
+
+        <ImageView
+            android:id="@+id/btn_attachment"
+            android:layout_width="@dimen/hv_19dp"
+            android:layout_height="@dimen/hv_19dp"
+            android:src="@drawable/icon_attachment"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/hv_1dp"
+            android:layout_marginStart="@dimen/hv_14dp"
+            android:background="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@id/textView7" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ll_attachment"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="@dimen/hv_50dp"
+        android:layout_marginStart="@dimen/hv_24dp"
+        android:layout_marginEnd="@dimen/hv_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="@dimen/hv_19dp"
+            android:layout_height="@dimen/hv_19dp"
+            android:src="@drawable/icon_attachment"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/Widget.Theme.Email.hv17TextView"
+            android:layout_width="169dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="@dimen/hv_8dp"
+            android:text="@string/common_attachment_added"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageView3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView11"
+            style="@style/Widget.Theme.Email.hv17TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/hv_8dp"
+            android:text="@string/common_attachment_view_details"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/imageView4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="@dimen/hv_15dp"
+            android:layout_height="@dimen/hv_15dp"
+            android:src="@drawable/icon_arrpw_down"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_compose_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/hv_24dp"
+        android:layout_marginTop="@dimen/hv_17dp"
+        android:layout_marginEnd="@dimen/hv_24dp"
+        android:layout_marginBottom="@dimen/hv_50dp"
+        android:hint="@string/email_compose_content_hint_text"
+        android:layout_weight="1"
+        android:background="@drawable/shape_white_stroke_1_black_corners_12"
+        android:gravity="start|top"
+        android:padding="@dimen/hv_10dp" />
+
+</LinearLayout>

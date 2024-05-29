@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="account_setup_node_list">
+        <item>@string/node_seek_bar_setup_account_password_text</item>
+        <item>@string/node_seek_bar_setup_outgoing_config_text</item>
+        <item>@string/node_seek_bar_setup_done_text</item>
+    </string-array>
+</resources>

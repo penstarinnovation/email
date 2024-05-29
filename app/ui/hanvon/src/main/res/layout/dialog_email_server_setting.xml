@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/hv_31dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Widget.Theme.Email.hv17TextView"
+            android:layout_width="@dimen/hv_120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/hv_14dp"
+            android:gravity="end"
+            android:text="@string/common_email_text" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/Widget.Theme.Email.hv17EditText"
+            android:layout_width="@dimen/hv_320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/hv_24dp"
+            android:paddingStart="@dimen/hv_14dp"
+            android:paddingTop="@dimen/hv_9dp"
+            android:paddingEnd="@dimen/hv_14dp"
+            android:paddingBottom="@dimen/hv_9dp"
+            tools:text="asdasd" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/hv_31dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Widget.Theme.Email.hv17TextView"
+            android:layout_width="@dimen/hv_120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/hv_14dp"
+            android:gravity="end"
+            android:text="@string/common_password_text" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/Widget.Theme.Email.hv17EditText"
+            android:layout_width="@dimen/hv_320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/hv_24dp"
+            android:paddingStart="@dimen/hv_14dp"
+            android:paddingTop="@dimen/hv_9dp"
+            android:paddingEnd="@dimen/hv_14dp"
+            android:paddingBottom="@dimen/hv_9dp"
+            tools:text="asdasd" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/hv_31dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_server_text"
+            style="@style/Widget.Theme.Email.hv17TextView"
+            android:layout_width="@dimen/hv_120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/hv_14dp"
+            android:gravity="end"
+            android:text="@string/common_incoming_server_pop_text" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/Widget.Theme.Email.hv17EditText"
+            android:layout_width="@dimen/hv_320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/hv_24dp"
+            android:paddingStart="@dimen/hv_14dp"
+            android:paddingTop="@dimen/hv_9dp"
+            android:paddingEnd="@dimen/hv_14dp"
+            android:paddingBottom="@dimen/hv_9dp"
+            tools:text="asdasd" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/hv_31dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Widget.Theme.Email.hv17TextView"
+            android:layout_width="@dimen/hv_120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/hv_14dp"
+            android:gravity="end"
+            android:text="@string/common_port_text" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/Widget.Theme.Email.hv17EditText"
+            android:layout_width="@dimen/hv_320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/hv_24dp"
+            android:paddingStart="@dimen/hv_14dp"
+            android:paddingTop="@dimen/hv_9dp"
+            android:paddingEnd="@dimen/hv_14dp"
+            android:paddingBottom="@dimen/hv_9dp"
+            tools:text="asdasd" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/hv_31dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Widget.Theme.Email.hv17TextView"
+            android:layout_width="@dimen/hv_120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/hv_14dp"
+            android:gravity="end"
+            android:text="@string/common_security_text" />
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/sw_security"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:thumbTint="@color/selector_switch_thumb_tint_colorstate_list"
+            app:trackTint="@color/selector_switch_track_colorstate_list" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/hv_31dp" />
+
+    <include
+        android:id="@+id/cl_dialog_foot"
+        layout="@layout/dialog_email_base_foot_two" />
+</LinearLayout>

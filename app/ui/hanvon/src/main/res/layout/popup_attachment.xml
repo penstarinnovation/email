@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_white_stroke_1_black_corners_14"
+    android:orientation="vertical"
+    android:padding="@dimen/hv_17dp">
+
+    <TextView
+        android:id="@+id/tv_add_contact"
+        style="@style/Widget.Theme.Email.hv17TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:text="@string/popup_contact_add_person_text" />
+
+    <TextView
+        android:id="@+id/tv_delete_contact"
+        style="@style/Widget.Theme.Email.hv17TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:text="@string/popup_contact_delete_person_text" />
+
+    <TextView
+        android:id="@+id/tv_edit"
+        style="@style/Widget.Theme.Email.hv17TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="@dimen/hv_23dp"
+        android:text="@string/popup_contact_edit" />
+
+    <TextView
+        android:id="@+id/tv_delete"
+        style="@style/Widget.Theme.Email.hv17TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="@dimen/hv_23dp"
+        android:text="@string/popup_contact_delete" />
+
+</LinearLayout>

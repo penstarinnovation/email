@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/hv_31dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Widget.Theme.Email.hv17TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_logout_content_head" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Widget.Theme.Email.hv15TextView"
+            android:layout_width="@dimen/hv_350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/hv_12dp"
+
+            android:text="@string/dialog_logout_content_foot" />
+    </LinearLayout>
+
+
+    <include
+        android:id="@+id/cl_dialog_foot"
+        layout="@layout/dialog_email_base_foot_two" />
+</LinearLayout>

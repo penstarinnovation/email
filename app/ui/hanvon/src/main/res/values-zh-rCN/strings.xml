@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="message_main_activity_label">Email_Main_Activity</string>
+    <string name="message_main_activity_title">Email_Main_Activity</string>
+    <string name="message_compose_fragment_label">Email_Compose_Fragment</string>
+    <string name="message_compose_fragment_title">Compose email</string>
+    <string name="welcome_fragment_label">Welcome_Fragment</string>
+    <string name="welcome_fragment_title">Welcome_Fragment</string>
+    <string name="account_setup_fragment_label">Account_Setup_Fragment</string>
+    <string name="account_setup_auto_discovery_fragment_label">Account_Setup_Auto_Discovery_Fragment</string>
+    <string name="account_setup_auto_discovery_fragment_title">Set</string>
+    <string name="account_setup_account_password_fragment_label">Account_Setup_Account_Password_Fragment</string>
+    <string name="account_setup_account_password_fragment_title">Set</string>
+    <string name="account_setup_server_type_fragment_label">Account_Setup_Server_Type_Fragment</string>
+    <string name="account_setup_server_type_fragment_title">Set</string>
+    <string name="account_setup_incoming_server_settings_fragment_label">Account_Setup_Incoming_Server_Settings_Fragment</string>
+    <string name="account_setup_incoming_server_settings_fragment_title">Set</string>
+    <string name="account_setup_outgoing_server_settings_fragment_label">Account_Setup_Outgoing_Server_Settings_Fragment</string>
+    <string name="account_setup_outgoing_server_settings_fragment_title">Set</string>
+    <string name="account_setup_done_fragment_label">Account_Setup_Done_Fragment</string>
+    <string name="account_setup_done_fragment_title">Set</string>
+    <string name="contact_select_fragment_label">Contact_Select_Fragment</string>
+    <string name="contact_select_fragment_title">Select X contacts</string>
+    <string name="setting_config_fragment_label">Setting_Config_Fragment</string>
+    <string name="setting_config_fragment_title">Email Setting</string>
+    <string name="setting_guidance_fragment_label">Setting_Guidance_Fragment</string>
+    <string name="setting_guidance_fragment_title">Email setup method</string>
+
+
+    <!--    自定义view-->
+    <string name="node_seek_bar_setup_account_password_text">账户密码</string>
+    <string name="node_seek_bar_setup_server_type_text">服务器类型</string>
+    <string name="node_seek_bar_setup_server_settings_text">服务器设置</string>
+    <string name="node_seek_bar_setup_incoming_config_text">收件服务器设置</string>
+    <string name="node_seek_bar_setup_outgoing_config_text">发件服务器设置</string>
+    <string name="node_seek_bar_setup_done_text">完成</string>
+
+    <!--    自定义dialog-->
+    <string name="dialog_save_file_title">保存文件</string>
+
+    <string name="dialog_login_fail_title">登录失败</string>
+    <string name="dialog_login_fail_content">由于QQ/163/126/icloud邮箱服务器的限制，为确保成功登录，用户可能需要提前在移动端设置授权码。否则，可能会遇到登录失败的问题。</string>
+    <string name="dialog_login_fail_button_text">查看移动端授权码设置方法</string>
+
+    <string name="dialog_login_tip_title"> XX邮箱登录提示</string>
+    <string name="dialog_login_tip_content">登录XX邮箱时，需要在密码框处输入XX授权码。</string>
+    <string name="dialog_login_tip_left_button_text">已了解</string>
+    <string name="dialog_login_tip_right_button_text">授权码获取方法</string>
+
+    <string name="dialog_compose_loading_content">正在发送邮件……</string>
+
+    <string name="dialog_login_loading_content">正在配置中，请稍后……</string>
+
+    <string name="dialog_create_contact_title">新建联系人</string>
+    <string name="dialog_create_contact_name_text">姓名</string>
+    <string name="dialog_create_contact_company_text">公司</string>
+    <string name="dialog_create_contact_email_text">邮箱</string>
+    <string name="dialog_create_contact_phone_text">电话</string>
+    <string name="dialog_create_contact_address_text">地址</string>
+    <string name="dialog_create_contact_note_text">备注</string>
+
+    <string name="dialog_logout_title">Logout</string>
+    <string name="dialog_logout_content_head">退出邮箱，是否保留本地数据？</string>
+    <string name="dialog_logout_content_foot">本地数据包含存在的本地邮件，退出后，将彻底删除这部分邮件无法找回，请谨慎操作</string>
+    <string name="dialog_logout_left_button_text">不保留本地数据</string>
+    <string name="dialog_logout_right_button_text">保留本地数据</string>
+
+    <string name="dialog_server_setting_outgoing_title">外发设置</string>
+    <string name="dialog_server_setting_incoming_title">接受设置</string>
+    <string name="dialog_server_setting_left_button_text">取消</string>
+    <string name="dialog_server_setting_right_button_text">完成配置</string>
+
+    <!--自定义popup-->
+    <string name="popup_email_mark_as_read_text">标为已读</string>
+    <string name="popup_email_mark_as_unread_text">标为未读</string>
+    <string name="popup_email_flagged_text">标为旗标</string>
+    <string name="popup_email_unflag_text">取消旗标</string>
+    <string name="popup_email_reply_text">回复</string>
+    <string name="popup_email_reply_all_text">回复全部</string>
+    <string name="popup_email_forward_text">转发</string>
+    <string name="popup_email_batch_manage_text">批量管理</string>
+    <string name="popup_email_delete_text">删除</string>
+    <string name="popup_email_delete_permanently_text">彻底删除</string>
+
+    <string name="popup_contact_add_person_text">添加至通讯录</string>
+    <string name="popup_contact_delete_person_text">从通讯录中刪除</string>
+    <string name="popup_contact_edit">编辑</string>
+    <string name="popup_contact_delete">删除</string>
+
+    <!--    通用-->
+    <string name="common_button_next">下一步</string>
+    <string name="common_button_pre">上一步</string>
+    <string name="common_button_done">完成</string>
+    <string name="common_button_exit">退出</string>
+
+    <string name="common_account_text">账号</string>
+    <string name="common_email_account_hint_text">请输入邮箱账号</string>
+    <string name="common_email_text">Email地址</string>
+    <string name="common_email_hint_text">请输入Email地址</string>
+    <string name="common_p_or_a_text">密码或授权码</string>
+    <string name="common_p_or_a_hint_text">请输入密码或授权码</string>
+    <string name="common_password_text">请输入密码或授权码</string>
+    <string name="common_password_hint_text">请输入密码</string>
+    <string name="common_port_text">端口</string>
+    <string name="common_security_text">SSL</string>
+    <string name="common_server_setting_text">服务器设置</string>
+    <string name="common_signature_setting_text">签名设置</string>
+
+    <string name="common_incoming_server_pop_text">POP3服务器</string>
+    <string name="common_incoming_server_imap_text">IMAP服务器</string>
+    <string name="common_outgoing_server_smtp_text">SMTP服务器</string>
+    <string name="common_incoming_server_pop_type">POP3</string>
+    <string name="common_incoming_server_imap_type">IMAP</string>
+    <string name="common_outgoing_server_smtp_type">SMTP</string>
+
+    <string name="common_pop3_address_hint_text">请输入POP3服务器</string>
+    <string name="common_imap_address_hint_text">请输入IMAP服务器</string>
+    <string name="common_smtp_address_hint_text">请输入SMTP服务器</string>
+    <string name="common_port_hint_text">请输入端口</string>
+
+    <string name="common_send_text">发送</string>
+    <string name="common_set_text">设置</string>
+
+    <string name="common_sender_text">发件人</string>
+    <string name="common_recipient_text">收件人</string>
+    <string name="common_subject_text">主题</string>
+    <string name="common_cc_text">抄送</string>
+    <string name="common_bcc_text">密送</string>
+    <string name="common_cc_bcc_text">抄送/密送</string>
+    <string name="common_time_text">时间</string>
+
+    <string name="common_attachment_view_text">查看</string>
+    <string name="common_attachment_delete_text">删除</string>
+    <string name="common_attachment_view_details">查看详情</string>
+    <string name="common_attachment_added">已添加X个附件</string>
+
+    <string name="common_contact_new">新建联系人</string>
+    <string name="common_contact_delete">删除联系人</string>
+    <string name="common_search">搜索</string>
+
+    <string name="common_contact">通訊錄</string>
+    <string name="common_attachment">附件管理</string>
+    <string name="common_email_setup">邮箱设置</string>
+
+    <string name="common_select_all">全选</string>
+    <string name="common_deselect_all">取消全选</string>
+
+    <string name="welcome_title">欢迎使用邮箱</string>
+    <string name="welcome_message">点击登录按钮绑定账号后可发邮件</string>
+
+    <string name="account_setup_title">设置邮箱</string>
+
+    <string name="account_setup_auto_discovery_address_password_code_tips_text">您仅需输入邮箱账号和密码，即可使用您的邮箱</string>
+    <string name="account_setup_auto_discovery_button_configuration_text"><u>手动配置协议和服务器</u></string>
+    <string name="account_setup_auto_discovery_code_tips_text">QQ/163/126/icloud或企业邮箱登录不上?请尝试登录网页端开启IMAP服务；设置移动端授权码，并将授权码作为密码再次登录。<u>戳这里可查看常见邮箱的网页端设置方法。</u></string>
+
+    <string name="account_setup_done_tips_text">您的邮箱已设置成功，可以使用邮件了</string>
+    <string name="account_setup_done_account_text">为此账户创建名称</string>
+    <string name="account_setup_done_account_hint_text">请输入账户名称</string>
+    <string name="account_setup_done_display_name_text">您的姓名显示在外发邮件上</string>
+    <string name="account_setup_done_display_name_hint_text">请输入显示名称</string>
+
+    <string name="settings_guidance_qq_1_text">1、使用电脑在浏览器上输入https://mail.qq.com,使用账号密码登录邮箱</string>
+    <string name="settings_guidance_qq_2_text">2、进入邮箱主页面后点击设置——>账户</string>
+    <string name="settings_guidance_qq_3_text">3、开启IMAP/SMTP服务，验证密保后获得授权码，并将授权码输入电纸本邮箱登录页面密码框即可登录</string>
+
+    <string name="settings_guidance_netease_1_text">1、使用电脑在浏览器上输入https://mail.163.com,使用账号密码登录邮箱</string>
+    <string name="settings_guidance_netease_2_text">2、进入邮箱主页面后点击设置——>POP3/SMTP/IMAP</string>
+    <string name="settings_guidance_netease_3_text">3、勾选MAP/SMTP服务，并按照步骤设置授权码，设置完成后将授权码输入电纸本邮箱登录页面密码框即可登录</string>
+
+    <string name="settings_guidance_icloud_1_text">1、使用电脑在浏览器上输入https://appleid.apple.com,,使用账号密码登录</string>
+    <string name="settings_guidance_icloud_2_text">2、在安全栏目下生成APP专用密码</string>
+    <string name="settings_guidance_icloud_3_text">3、使用账号和专用密码即可登录电纸本邮箱</string>
+
+    <string name="email_compose_title">写邮件</string>
+    <string name="email_compose_content_hint_text">请输入邮件内容</string>
+
+
+</resources>

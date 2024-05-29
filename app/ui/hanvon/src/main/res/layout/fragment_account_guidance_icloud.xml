@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+
+        style="@style/Widget.Theme.Email.hv17TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text="@string/settings_guidance_icloud_1_text" />
+
+    <TextView
+
+        style="@style/Widget.Theme.Email.hv17TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hv_46dp"
+        android:gravity="start"
+        android:text="@string/settings_guidance_icloud_2_text" />
+
+    <ImageView
+        android:id="@+id/iv_icloud1"
+        android:layout_width="@dimen/hv_400dp"
+        android:layout_height="@dimen/hv_200dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/hv_17dp"
+        android:layout_marginBottom="@dimen/hv_46dp"
+        android:contentDescription="TODO" />
+
+    <TextView
+
+        style="@style/Widget.Theme.Email.hv17TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text="@string/settings_guidance_icloud_3_text" />
+
+
+</LinearLayout>

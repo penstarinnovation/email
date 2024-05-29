@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_account_setup"
+    app:startDestination="@id/AutoDiscovery">
+
+
+    <fragment
+        android:id="@+id/AutoDiscovery"
+        android:name="com.hvmail.legacy.ui.account.AccountSetupAutoDiscoveryFragment"
+        android:label="@string/account_setup_auto_discovery_fragment_label"
+        tools:layout="@layout/fragment_account_setup_auto_discovery">
+
+        <action
+            android:id="@+id/action_AutoDiscovery_to_AccountPassword"
+            app:destination="@id/AccountPassword" />
+
+        <action
+            android:id="@+id/action_AutoDiscovery_to_SettingGuidance"
+            app:destination="@id/SettingGuidance" />
+
+        <action
+            android:id="@+id/action_AutoDiscovery_to_SetupDone"
+            app:destination="@id/SetupDone" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/AccountPassword"
+        android:name="com.hvmail.legacy.ui.account.AccountSetupAccountPasswordFragment"
+        android:label="@string/account_setup_account_password_fragment_label"
+        tools:layout="@layout/fragment_account_setup_account_password">
+
+
+        <action
+            android:id="@+id/action_AccountPassword_to_OutgoingServerConfig"
+            app:destination="@id/OutgoingServerSettings" />
+
+    </fragment>
+
+        <fragment
+            android:id="@+id/ServerSettings"
+            android:name="com.hvmail.legacy.ui.account.AccountSetupServerTypeFragment"
+            android:label="@string/account_setup_server_type_fragment_label"
+            tools:layout="@layout/fragment_account_setup_server_type">
+
+            <action
+                android:id="@+id/action_ServerSettings_to_IncomingServerConfig"
+                app:destination="@id/IncomingServerSettings" />
+
+        </fragment>
+
+        <fragment
+            android:id="@+id/IncomingServerSettings"
+            android:name="com.hvmail.legacy.ui.account.AccountSetupIncomingServerSettingsFragment"
+            android:label="@string/account_setup_incoming_server_settings_fragment_label"
+            tools:layout="@layout/fragment_account_setup_incoming_server_settings">
+
+            <action
+                android:id="@+id/action_IncomingServerSettings_to_OutgoingServerSettings"
+                app:destination="@id/OutgoingServerSettings" />
+
+        </fragment>
+
+    <fragment
+        android:id="@+id/OutgoingServerSettings"
+        android:name="com.hvmail.legacy.ui.account.AccountSetupOutgoingServerSettingsFragment"
+        android:label="@string/account_setup_outgoing_server_settings_fragment_label"
+        tools:layout="@layout/fragment_account_setup_outgoing_server_settings">
+
+        <!--        <action-->
+        <!--            android:id="@+id/action_OutgoingServerSettings_back_to_AccountPassword"-->
+        <!--            app:destination="@id/AccountPassword" />-->
+
+        <action
+            android:id="@+id/action_OutgoingServerSettings_to_SetupDone"
+            app:destination="@id/SetupDone"
+            />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/SetupDone"
+        android:name="com.hvmail.legacy.ui.account.AccountSetupDoneFragment"
+        android:label="@string/account_setup_done_fragment_label"
+        tools:layout="@layout/fragment_account_setup_done">
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/SettingGuidance"
+        android:name="com.hvmail.legacy.ui.settings.guidance.SettingGuidanceFragment"
+        android:label="@string/setting_guidance_fragment_label"
+        tools:layout="@layout/fragment_settings_guidance">
+
+        <action
+            android:id="@+id/action_SettingGuidance_to_AutoDiscovery"
+            app:destination="@id/AutoDiscovery" />
+    </fragment>
+
+
+</navigation>

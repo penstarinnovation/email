@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingStart="@dimen/hv_30dp"
+    android:paddingEnd="@dimen/hv_30dp">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hv_28dp"
+        android:textSize="@dimen/hv_31sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="asdfg" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/hv_14dp"
+        android:background="@drawable/shape_white_stroke_1_black_corners_12"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/hv_12dp"
+        android:paddingTop="@dimen/hv_9dp"
+        android:paddingEnd="@dimen/hv_12dp"
+        android:paddingBottom="@dimen/hv_9dp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_name"
+        app:layout_constraintStart_toEndOf="@id/tv_name"
+        app:layout_constraintTop_toTopOf="@id/tv_name">
+
+        <View
+            android:layout_width="@dimen/hv_16dp"
+            android:layout_height="@dimen/hv_16dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/icon_compose" />
+
+        <TextView
+            style="@style/Widget.Theme.Email.hv17TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="写邮件" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hv_36dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/tv_name">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/Widget.Theme.Email.hv17TextView"
+                android:layout_width="@dimen/hv_89dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/hv_17dp"
+                android:gravity="end"
+                android:text="@string/dialog_create_contact_company_text" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                style="@style/Widget.Theme.Email.hv17EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="9dp"
+                tools:text="asdasd" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/hv_31dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/Widget.Theme.Email.hv17TextView"
+                android:layout_width="@dimen/hv_89dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/hv_17dp"
+                android:gravity="end"
+                android:text="@string/dialog_create_contact_email_text" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                style="@style/Widget.Theme.Email.hv17EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="9dp"
+                tools:text="asdasd" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/hv_31dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/Widget.Theme.Email.hv17TextView"
+                android:layout_width="@dimen/hv_89dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/hv_17dp"
+                android:gravity="end"
+                android:text="@string/dialog_create_contact_phone_text" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                style="@style/Widget.Theme.Email.hv17EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="9dp"
+                tools:text="asdasd" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/hv_31dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/Widget.Theme.Email.hv17TextView"
+                android:layout_width="@dimen/hv_89dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/hv_17dp"
+                android:gravity="end"
+                android:text="@string/dialog_create_contact_address_text" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                style="@style/Widget.Theme.Email.hv17EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="9dp"
+                tools:text="asdasd" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/hv_31dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/Widget.Theme.Email.hv17TextView"
+                android:layout_width="@dimen/hv_89dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/hv_17dp"
+                android:gravity="end"
+                android:text="@string/dialog_create_contact_note_text" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                style="@style/Widget.Theme.Email.hv17EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="9dp"
+                tools:text="asdasd" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/Widget.Theme.Email.hv17Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/hv_31dp"
+            android:paddingStart="@dimen/hv_12dp"
+            android:paddingEnd="@dimen/hv_12dp"
+            android:text="@string/common_contact_delete" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

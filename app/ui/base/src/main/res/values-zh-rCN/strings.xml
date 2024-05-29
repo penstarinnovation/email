@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Used to confirm acceptance of dialog boxes, warnings, errors, etc.-->
+    <string name="okay_action">确定</string>
+    <string name="cancel_action">取消</string>
+    <string name="dialog_confirm_cancel_button">取消</string>
+    <string name="dialog_confirm_confirm_button">确定</string>
+    <string name="dialog_confirm_one_button">确定</string>
+</resources>

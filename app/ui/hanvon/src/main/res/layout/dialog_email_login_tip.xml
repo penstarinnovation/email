@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_tip_content"
+        style="@style/Widget.Theme.Email.hv17TextView"
+        android:layout_width="@dimen/hv_350dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/hv_31dp"
+        android:text="@string/dialog_login_tip_content" />
+
+    <include
+        android:id="@+id/cl_dialog_foot"
+        layout="@layout/dialog_email_base_foot_two" />
+
+</LinearLayout>

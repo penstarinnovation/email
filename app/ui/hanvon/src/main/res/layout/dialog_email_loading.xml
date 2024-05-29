@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/hv_42dp"
+    android:paddingTop="@dimen/hv_50dp"
+    android:paddingRight="@dimen/hv_42dp"
+    android:paddingBottom="@dimen/hv_31dp">
+
+    <FrameLayout
+        android:layout_width="@dimen/hv_216dp"
+        android:layout_height="wrap_content">
+
+        <com.hvmail.legacy.view.EmailLoadingView
+            android:id="@+id/custom_email_loading"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hv_21dp"
+            app:email_loading_view_node_height="@dimen/email_loading_view_node_height"
+            app:email_loading_view_node_num="@integer/email_loading_view_node_num"
+            app:email_loading_view_node_radius="@dimen/email_loading_view_node_radius"
+            app:email_loading_view_node_width="@dimen/email_loading_view_node_width" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_loading_text"
+        style="@style/Widget.Theme.Email.hv17TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/hv_23dp"
+        tools:text="@string/dialog_login_loading_content" />
+</LinearLayout>
+
